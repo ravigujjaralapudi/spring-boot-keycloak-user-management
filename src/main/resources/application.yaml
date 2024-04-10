@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:8070/realms/maxildev
+  application:
+    name: spring-boot-keycloak-user-management
+
+config:
+  keycloak:
+    accessTokenUri: http://127.0.0.1:8070/realms/maxildev/protocol/openid-connect/token
+    realm: maxildev
+    server-url: http://127.0.0.1:8070
+    client-id: admin-cli
+    client-secret: VZ2sVSzzU4RqxF9n1uz72cJTEjdmVc0Y
